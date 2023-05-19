@@ -26,6 +26,7 @@
     </header>
     <main>
         <h3>{{ $titleH3 }}</h3>
+        <img src="img/laravel_logo.jpeg" alt="laravel_logo" style="height: 20rem">
     </main>
     <footer>
         <span>{{ $footerSpan }}</span>
