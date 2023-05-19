@@ -27,14 +27,14 @@ Route::get('/', function () {
 Route::get('/prologue', function () {
     $title = 'Prologue';
     return view('prologue', compact('title'));
-});
+})->name('prologue');
 
 Route::get('/start', function () {
     $title = 'Getting Started';
     return view('start', compact('title'));
-});
+})->name('start');;
 
 Route::get('/installation', function () {
     $title = 'Installation';
     return view('installation', compact('title'));
-});
+})->name('installation');;

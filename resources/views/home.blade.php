@@ -14,13 +14,13 @@
         <h2>{{ $titleH2 }}</h2>
         <ul>
             <li>
-                <a href="/prologue">{{ $prologueTitle }}</a>
+                <a href="{{ route('prologue') }}">{{ $prologueTitle }}</a>
             </li>
             <li>
-                <a href="/start">{{ $gettingStartedTitle }}</a>
+                <a href="{{ route('start') }}">{{ $gettingStartedTitle }}</a>
             </li>
             <li>
-                <a href="/installation">{{ $installationTitle }}</a>
+                <a href="{{ route('installation') }}">{{ $installationTitle }}</a>
             </li>
         </ul>
     </header>
