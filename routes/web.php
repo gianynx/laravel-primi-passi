@@ -14,5 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $titleH1 = 'Hello World!';
+    $titleH2 = 'Documentation';
+    $titleH3 = 'Welcome to Laravel!';
+    $prologueTitle = 'Prologue';
+    $gettingStartedTitle = 'Getting Started';
+    $installationTitle = 'Installation';
+    $footerSpan = 'About Laravel first experience';
+    return view('home', compact('titleH1', 'titleH2', 'titleH3', 'prologueTitle', 'gettingStartedTitle', 'installationTitle', 'footerSpan'));
+});
+
+Route::get('/prologue', function () {
+    $title = 'Prologue';
+    return view('prologue', compact('title'));
+});
+
+Route::get('/start', function () {
+    $title = 'Getting Started';
+    return view('start', compact('title'));
+});
+
+Route::get('/installation', function () {
+    $title = 'Installation';
+    return view('installation', compact('title'));
 });

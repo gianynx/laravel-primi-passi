@@ -9,7 +9,27 @@
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1>{{ $titleH1 }}</h1>
+        <h2>{{ $titleH2 }}</h2>
+        <ul>
+            <li>
+                <a href="/prologue">{{ $prologueTitle }}</a>
+            </li>
+            <li>
+                <a href="/start">{{ $gettingStartedTitle }}</a>
+            </li>
+            <li>
+                <a href="/installation">{{ $installationTitle }}</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h3>{{ $titleH3 }}</h3>
+    </main>
+    <footer>
+        <span>{{ $footerSpan }}</span>
+    </footer>
 </body>
 
 </html>
